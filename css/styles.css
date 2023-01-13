@@ -1,0 +1,656 @@
+@font-face {
+  src: url("fonts/Yeseva+One.ttf");
+  font-family:"Yeseva+One";
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+::-webkit-scrollbar {
+  width : 0.1px; 
+  height: 5px;
+  pacity: 0.02;
+} /* УБРАЛ ПОЛОСУ ПРОКРУТКИ С ЭКРАНА и сделал свою. 
+Когда пишу сайт, чтобы на планшете отображалось содержимое от края до края страницы 
+без зазоров, прокрутку можно отключить. И включить для красоты по готовности сайта.*/
+
+::-webkit-scrollbar-button {height: 50px; background :#42e10e; }  /*2 - кнопка*/  
+
+::-webkit-scrollbar-track {background: #274dd7; }  /*3 - трек */ 
+
+::-webkit-scrollbar-track-piece { background: #e91e63;}  /*4 - видимая часть трека */ 
+
+::-webkit-scrollbar-thumb {background: #fbe100; border-radius: 10px;
+ -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); /*inset 1 3 13px rgb(207 10 10 / 64%)*/} /*5 - ползунок */ 
+
+* {
+   margin:0;
+   padding:0;
+}
+
+ html {
+   idth:100%;
+   eight:100%;
+}
+
+body {
+	idth:100%;
+   eight:100%;
+	box-sizing: border-box;
+	background-image: url('https://usagif.com/wp-content/uploads/gif/snwflks-21.gif');/*https://highstar.ru/pictures/snejinki/09.gif https://usagif.com/wp-content/uploads/gif/snwflks-29.gif*/
+	background-size: cover;
+	background-position: center center;
+   background-color: blue;
+}
+
+.greetingsText {
+ position: absolute;
+ width: 1280px;
+}
+
+.listGreetingsText {
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 74p;
+
+font-family: 'Pacifico', cursive; 
+font-size: 50px;
+font-weight: bold;
+ont-style: italic;
+list-style: none;
+color: white;
+}
+
+.item {}
+
+/*img*/.filterFlyingSanta {
+position: absolute;
+width: 650p;
+height: 64p;
+/*animation-duration: 100s; /*регулируется быстрота и медлительность движения при включенном js*/
+/*animation-name: mymove;*/
+top: 129px;
+right: 242p;
+z-index: 2;
+cursor: pointe;
+-webkit-animation: linear infinite;
+-webkit-animation-name: mymove;
+-webkit-animation-duration: 75s;
+/*animation-delay: 500s;время через сколько запустится анимация*/
+/*animation: mymove 75s infinite; /*регулируется быстрота и медлительность движения*/
+/*animation-iteration-count: mymove ; /*сколько раз сработает, но пока не работает*/ 
+}
+/*@keyframes mymove {
+from { left:0px; }
+to { left:927px; } /*ставим размер экрана, чтобы гугл исчезал если нужно*
+}*/
+
+/*Элемент двигается по всей странице туда-обратно с разворотом*/
+@-webkit-keyframes mymove {
+  0% {
+    left: 0;
+  }
+  48% {
+    -webkit-transform: rotateY(0deg); 
+  }
+  50% { 
+    left: calc(77% - 100px);/*85% регулируют длину движения элемента*/
+    -webkit-transform: rotateY(180deg);
+  }
+  98% {
+    -webkit-transform: rotateY(180deg); 
+  }
+  100% {
+    left: 0;    
+     -webkit-transform: rotateY(0deg);
+  }
+}
+
+.flyingSanta {
+height: 77px;
+}
+
+.box {
+	position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   eight: 100%;/*если включить, цифры будут по середине экрана*/
+   top: 216px;
+   left: 510px;
+}
+
+.glitch {
+   color:#fff;
+   font-family: 'Open Sans', sans-serif;
+   font-size:100px;
+   position: relative;
+   padding:30px;
+}
+.glitch:before, .glitch:after {
+   content:'2023';
+   color:#fff;
+   position: absolute;
+   top:0;
+   overflow:hidden;
+   padding:30px;
+}
+.glitch:before {
+   left:3px;
+   text-shadow: -3px 0 red;
+   animation: glitch-before 4s linear 0s infinite alternate;
+}
+.glitch:after {
+   left:-3px;
+   text-shadow: -3px 0 blue;
+   animation: glitch-after 4s linear 0s infinite alternate;
+}
+
+@keyframes glitch-before {
+	 0% {
+		 clip: rect(58px, 350px, 17px, 30px);
+	}
+	 5% {
+		 clip: rect(12px, 350px, 58px, 30px);
+	}
+	 10% {
+		 clip: rect(53px, 350px, 125px, 30px);
+	}
+	 15% {
+		 clip: rect(111px, 350px, 72px, 30px);
+	}
+	 20% {
+		 clip: rect(70px, 350px, 116px, 30px);
+	}
+	 25% {
+		 clip: rect(109px, 350px, 144px, 30px);
+	}
+	 30% {
+		 clip: rect(144px, 350px, 7px, 30px);
+	}
+	 35% {
+		 clip: rect(118px, 350px, 71px, 30px);
+	}
+	 40% {
+		 clip: rect(147px, 350px, 120px, 30px);
+	}
+	 45% {
+		 clip: rect(57px, 350px, 145px, 30px);
+	}
+	 50% {
+		 clip: rect(63px, 350px, 14px, 30px);
+	}
+	 55% {
+		 clip: rect(69px, 350px, 108px, 30px);
+	}
+	 60% {
+		 clip: rect(75px, 350px, 64px, 30px);
+	}
+	 65% {
+		 clip: rect(108px, 350px, 25px, 30px);
+	}
+	 70% {
+		 clip: rect(129px, 350px, 139px, 30px);
+	}
+	 75% {
+		 clip: rect(25px, 350px, 113px, 30px);
+	}
+	 80% {
+		 clip: rect(47px, 350px, 125px, 30px);
+	}
+	 85% {
+		 clip: rect(142px, 350px, 35px, 30px);
+	}
+	 90% {
+		 clip: rect(14px, 350px, 117px, 30px);
+	}
+	 95% {
+		 clip: rect(135px, 350px, 104px, 30px);
+	}
+	 100% {
+		 clip: rect(75px, 350px, 63px, 30px);
+	}
+}
+
+@keyframes glitch-after {
+	 0% {
+		 clip: rect(71px, 350px, 102px, 30px);
+	}
+	 5% {
+		 clip: rect(77px, 350px, 6px, 30px);
+	}
+	 10% {
+		 clip: rect(142px, 350px, 119px, 30px);
+	}
+	 15% {
+		 clip: rect(1px, 350px, 20px, 30px);
+	}
+	 20% {
+		 clip: rect(35px, 350px, 56px, 30px);
+	}
+	 25% {
+		 clip: rect(65px, 350px, 116px, 30px);
+	}
+	 30% {
+		 clip: rect(5px, 350px, 89px, 30px);
+	}
+	 35% {
+		 clip: rect(81px, 350px, 41px, 30px);
+	}
+	 40% {
+		 clip: rect(106px, 350px, 134px, 30px);
+	}
+	 45% {
+		 clip: rect(16px, 350px, 28px, 30px);
+	}
+	 50% {
+		 clip: rect(76px, 350px, 125px, 30px);
+	}
+	 55% {
+		 clip: rect(130px, 350px, 141px, 30px);
+	}
+	 60% {
+		 clip: rect(103px, 350px, 75px, 30px);
+	}
+	 65% {
+		 clip: rect(4px, 350px, 32px, 30px);
+	}
+	 70% {
+		 clip: rect(7px, 350px, 123px, 30px);
+	}
+	 75% {
+		 clip: rect(106px, 350px, 42px, 30px);
+	}
+	 80% {
+		 clip: rect(41px, 350px, 94px, 30px);
+	}
+	 85% {
+		 clip: rect(95px, 350px, 5px, 30px);
+	}
+	 90% {
+		 clip: rect(139px, 350px, 144px, 30px);
+	}
+	 95% {
+		 clip: rect(100px, 350px, 99px, 30px);
+	}
+	 100% {
+		 clip: rect(5px, 350px, 126px, 30px);
+	}
+}
+
+.sectionSlider {
+position: absolute;
+display: flex;
+width: 1280p;/*подключать если сзади слайдера делать картинку(герляны) в виде бэкграунда*/
+height: 945p;/*подключать если сзади слайдера делать картинку(герляны) в виде бэкграунда*/
+top: 344px;
+left: 130p;
+ackground-image: url(https://i.pinimg.com/originals/f0/6d/24/f06d24a28474a6040c76b41d80a88543.gif);/*изображени герлянды под задний фон слайдера*/
+ackground-image: url(https://acegif.com/wp-content/uploads/gif/snwflks-53.gif);
+ackground-size: cover;
+ox-shadow: 0px 0px 31px 28px beige;
+}
+
+.sliderWrapFlex {
+position: absolute;
+display: flex;
+width: 962px;
+height: 668px;
+top: 144px;
+left: 162px;
+border: 10px double #0006cd;
+background-color: #ffc107;
+box-shadow:0px 0px 30px 26px beige;
+}
+
+.container {
+position: absolute;
+width: 962px; 
+height: 668px;
+}
+
+#slides{
+  position: relative;
+  width: 962px;
+  height: 668px;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;/* убрали точки у лишек*/
+}
+
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.showing{
+  opacity: 1;
+  z-index: 2;
+}
+
+.controls{
+  display: none;
+}
+
+/*
+non-essential styles:
+just for appearance; change whatever you want
+*/
+
+.slide{
+  padding: 40p;
+  box-sizing: border-box;
+  background: #333;
+  color: #fff;
+  background-size: cover;
+  font-size: 40px;
+}
+
+/* http://unrestrictedstock.com/wp-content/uploads/snowy-winter-vignette-bokeh-night-snow-falling-free-stock-photo.jpg */
+.slide:nth-of-type(1){
+  background-color: red;
+  background-image: url('images/IMG_2894.png' /*'https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/snowy-winter-vignette-bokeh-night-snow-falling-free-stock-photo.jpg'*/);
+background-size: cover;
+}
+
+/* http://www.dawghousedesignstudio.com/wp-content/uploads/2010/01/25/free-stock-photos-1.jpg */
+.slide:nth-of-type(7){
+  background-color: orange;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/free-stock-photos-1.jpg');
+}
+
+.controls{
+  background: #00000038/*#333*/;
+  color: #fff;
+  border: none;
+  padding: 20px 0px;
+  font-size: 20px;
+  cursor: pointer;
+  order: 2px solid #fff;
+  margin: 10px 0px 0px 10px;
+  width: 70p;
+  ransition: background-color 0.6s ease;
+  transition: opacity 0.4s ease;
+  opacity: 0;  
+}
+
+.controls:hover,
+.controls:focus{
+  /*background: #eee;
+  color: #333;*/
+  opacity: 1; 
+}
+
+.buttons{
+  position: absolute;
+  display: fle;
+  left: -10px;
+  top: -10px;
+  z-index: 10;
+  font-size: 0px;
+}
+
+.filterimgSlide {
+width: 962px/*100%*/;
+height: 668px/*100%*/;  
+filter: brightness(1);
+}
+
+.imgSlide {
+width: 100%;
+height:100%;
+}
+
+.textSlide {
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 962px;
+height: 50px;
+background-color: #00000017;
+
+font-family: 'Yeseva One';
+font-size: 30px;
+font-weight: bold;
+font-style: italic;
+color: white;
+z-index: 1;
+}
+
+.textTwoSlide {
+position: absolute;
+width: 600px;
+bottom: 568px;
+left: 98px;
+
+font-family: 'Pacifico', cursive;
+font-size: 37px;
+font-weight: bold;
+ont-style: italic;
+text-align: center;
+color: #36f482;
+}
+
+.filterFatherChristmasAndShowMaiden {
+position: absolute;
+width: 1280px; 
+height: 1679px/*190%*/;
+top: 1281px;
+border-top: 9px double #f00;
+background-image: url(https://r1.mt.ru/u1/photo2560/20590569051-0/original.gif);
+background-size: cover; /*очень болшая получается и не во весь рост*/
+}
+
+.filterChristmasVinok {
+position: absolute;
+width: 84px;
+height: 84px;
+top: 4px;
+left: 9px;
+border-radius: 72px;
+background-image: url(https://cdn1.ozone.ru/s3/multimedia-e/6161365406.jpg);
+background-size: cover;
+}
+
+.textImgFatherChristmas {
+position: absolute;
+width: 1023px;
+top: 3px;
+left: 131px;
+
+color: white; 
+font-style: italic;    
+font-size: 89px;    
+font-weight: bold;
+ext-shadow: 8px -5px 1px;
+}
+
+imgFatherChristmasAndShowMaiden {
+width: 1280px;
+height: 1316px;
+}
+
+.filterCatInCap {
+position: absolute;
+top: 1384px;
+left: 294px;
+}
+
+.cat-in-cap {
+width: 279px;
+height: 283px;
+}
+
+
+@media screen and (max-width: 1300px) {}
+
+@media screen and (max-width: 1024px) {
+
+@-webkit-keyframes mymove {
+  0% {
+    left: 0;
+  }
+  48% {
+    -webkit-transform: rotateY(0deg); 
+  }
+  50% { 
+    left: calc(96% - 100px);/*85% регулируют длину движения элемента*/
+    -webkit-transform: rotateY(180deg);
+  }
+  98% {
+    -webkit-transform: rotateY(180deg); 
+  }
+  100% {
+    left: 0;    
+     -webkit-transform: rotateY(0deg);
+  }
+}
+
+.filterFlyingSanta {
+position: absolute;
+top: 129px;
+z-index: 2;
+-webkit-animation: linear infinite;
+-webkit-animation-name: mymove;
+-webkit-animation-duration: 75s;
+}
+}
+
+@media screen and (max-width: 800px) {
+
+@-webkit-keyframes mymove {
+  0% {
+    left: 0;
+  }
+  48% {
+    -webkit-transform: rotateY(0deg); 
+  }
+  50% { 
+    left: calc(122% - 100px);/*85% регулируют длину движения элемента*/
+    -webkit-transform: rotateY(180deg);
+  }
+  98% {
+    -webkit-transform: rotateY(180deg); 
+  }
+  100% {
+    left: 0;    
+     -webkit-transform: rotateY(0deg);
+  }
+}
+
+.filterFlyingSanta {
+position: absolute;
+top: 123px;
+z-index: 2;
+-webkit-animation: linear infinite;
+-webkit-animation-name: mymove;
+-webkit-animation-duration: 75s;
+}
+}
+
+@media screen and (max-width: 768px) {
+
+@-webkit-keyframes mymove {
+  0% {
+    left: 0;
+  }
+  48% {
+    -webkit-transform: rotateY(0deg); 
+  }
+  50% { 
+    left: calc(128% - 100px);/*85% регулируют длину движения элемента*/
+    -webkit-transform: rotateY(180deg);
+  }
+  98% {
+    -webkit-transform: rotateY(180deg); 
+  }
+  100% {
+    left: 0;    
+     -webkit-transform: rotateY(0deg);
+  }
+}
+
+.filterFlyingSanta {
+position: absolute;
+top: 124px;
+z-index: 2;
+-webkit-animation: linear infinite;
+-webkit-animation-name: mymove;
+-webkit-animation-duration: 75s;
+}
+}
+
+@media screen and (max-width: 425px) {
+
+@-webkit-keyframes mymove {
+  0% {
+    left: 0;
+  }
+  48% {
+    -webkit-transform: rotateY(0deg); 
+  }
+  50% { 
+    left: calc(226% - 100px);/*85% регулируют длину движения элемента*/
+    -webkit-transform: rotateY(180deg);
+  }
+  98% {
+    -webkit-transform: rotateY(180deg); 
+  }
+  100% {
+    left: 0;    
+     -webkit-transform: rotateY(0deg);
+  }
+}
+
+.filterFlyingSanta {
+position: absolute;
+top: 124px;
+z-index: 2;
+-webkit-animation: linear infinite;
+-webkit-animation-name: mymove;
+-webkit-animation-duration: 75s;
+}
+}
+
+@media screen and (max-width: 375px) {
+
+@-webkit-keyframes mymove {
+  0% {
+    left: 0;
+  }
+  48% {
+    -webkit-transform: rotateY(0deg); 
+  }
+  50% { 
+    left: calc(265% - 100px);/*85% регулируют длину движения элемента*/
+    -webkit-transform: rotateY(180deg);
+  }
+  98% {
+    -webkit-transform: rotateY(180deg); 
+  }
+  100% {
+    left: 0;    
+     -webkit-transform: rotateY(0deg);
+  }
+}
+
+.filterFlyingSanta {
+position: absolute;
+top: 123px;
+z-index: 2;
+-webkit-animation: linear infinite;
+-webkit-animation-name: mymove;
+-webkit-animation-duration: 75s;
+}
+}
