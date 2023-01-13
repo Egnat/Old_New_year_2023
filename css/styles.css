@@ -450,10 +450,48 @@ color: #36f482;
 position: absolute;
 width: 1280px; 
 height: 1679px/*190%*/;
-top: 1281px;
+top: 1344px;
 border-top: 9px double #f00;
 background-image: url(https://r1.mt.ru/u1/photo2560/20590569051-0/original.gif);
 background-size: cover; /*очень болшая получается и не во весь рост*/
+}
+
+.filterGouingSanta {
+position: absolute;
+bottom: 1667px;
+nimation-name: gouing;
+nimation-delay: 500s;
+nimation: gouing 75s infinite;/*а это выключить и наоборот*/
+-webkit-animation: linear infinite;/*можно подключить*/
+-webkit-animation-name: gouing;
+-webkit-animation-duration: 100s;
+}
+
+/*Элемент двигается по всей странице туда-обратно с разворотом*/
+@-webkit-keyframes gouing {
+  0% {
+    left: 0;
+  }
+  48% {
+    -webkit-transform: rotateY(0deg); 
+  }
+  50% { 
+    left: calc(97% - 100px);/*85% регулируют длину движения элемента*/
+    -webkit-transform: rotateY(180deg);
+  }
+  98% {
+    -webkit-transform: rotateY(180deg); 
+  }
+  100% {
+    left: 0;    
+     -webkit-transform: rotateY(0deg);
+  }
+}
+
+.gouingSanta {
+width: 130px;
+height: 160px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 .filterChristmasVinok {
