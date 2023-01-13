@@ -81,17 +81,14 @@ animation-delay: 5s;/*время через сколько начнёт печа
 
 .greetingsText {
  position: absolute;
-<<<<<<< HEAD
- width: /*1280px*/48px;
- bottom: -296px;
- left: 1226px;
  width: 1280px/*48px*/;
- ottom: -296px;
+ bottom: -296px;
+ left: 1226p;
  eft: 1226px;/*подключить если добавляю Поздравляю, а артикль с поздравлениями размещаю справа вдоль страницы*/
 }
 
 .listGreetingsText {
-isplay: flex;
+display: flex;
 justify-content: space-between;
 align-items: center;
 height: 74p;
