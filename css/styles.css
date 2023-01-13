@@ -575,7 +575,7 @@ height: 283px;
 
 @media screen and (max-width: 1024px) {
 
-.greetingsText { bottom: -395px; left: 1216px; }
+greetingsText { bottom: -395px; left: 1216px; }
 
 @-webkit-keyframes mymove {
   0% {
@@ -609,7 +609,7 @@ z-index: 2;
 
 @media screen and (max-width: 800px) {
 
-.greetingsText { bottom: 71px; left: 1216px; }
+greetingsText { bottom: 71px; left: 1216px; }
 
 @-webkit-keyframes mymove {
   0% {
@@ -643,7 +643,7 @@ z-index: 2;
 
 @media screen and (max-width: 768px) {
 
-.greetingsText { bottom: -395px; left: 1216px; }
+greetingsText { bottom: -395px; left: 1216px; }
 
 @-webkit-keyframes mymove {
   0% {
@@ -677,7 +677,7 @@ z-index: 2;
 
 @media screen and (max-width: 425px) {
 
-.greetingsText { bottom: -395px; left: 1216px; }  
+greetingsText { bottom: -395px; left: 1216px; }  
 
 @-webkit-keyframes mymove {
   0% {
@@ -711,7 +711,7 @@ z-index: 2;
 
 @media screen and (max-width: 375px) {
 
-.greetingsText { bottom: -397px; left: 1216px; }
+greetingsText { bottom: -397px; left: 1216px; }
 
 @-webkit-keyframes mymove {
   0% {
