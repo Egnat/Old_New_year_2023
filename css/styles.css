@@ -46,19 +46,59 @@ body {
 width: 1280px;
 }
 
+.c1 {
+display: inline-block;
+margin-left: 388px;
+}
+
+1 {
+margin-top: 1%;
+font-family: "Pacifico", cursive;
+font-size: 2.0rem;
+color: #ed6eb4;
+}
+
+.type {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 0;
+
+list-style: none;
+font-family: "Pacifico", cursive;  
+font-size: 5.5rem;
+color: #f00;
+overflow: hidden;
+order-right: .15em solid orange;/*вид курсора, который печатает текст*/
+white-space: nowrap; 
+animation: typing 5s steps(30, end) forwards;/*скорость печатанья букв*/
+animation-delay: 5s;/*время через сколько начнёт печататься текст*/
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink {
+  from { order-color: transparent }
+  to { order-color: orange; }
+}
+
 .greetingsText {
  position: absolute;
- width: 1280px;
+ width: 48px;
+ bottom: -296px;
+ left: 1226px;
 }
 
 .listGreetingsText {
-display: flex;
+isplay: flex;
 justify-content: space-between;
 align-items: center;
 height: 74p;
 
 font-family: 'Pacifico', cursive; 
-font-size: 50px;
+font-size: 39px;
 font-weight: bold;
 ont-style: italic;
 list-style: none;
@@ -73,7 +113,7 @@ width: 650p;
 height: 64p;
 /*animation-duration: 100s; /*регулируется быстрота и медлительность движения при включенном js*/
 /*animation-name: mymove;*/
-top: 129px;
+top: 150px;
 right: 242p;
 z-index: 2;
 cursor: pointe;
@@ -539,6 +579,8 @@ height: 283px;
 
 @media screen and (max-width: 1024px) {
 
+.greetingsText { bottom: -395px; left: 1216px; }
+
 @-webkit-keyframes mymove {
   0% {
     left: 0;
@@ -561,7 +603,7 @@ height: 283px;
 
 .filterFlyingSanta {
 position: absolute;
-top: 129px;
+top: 154px;
 z-index: 2;
 -webkit-animation: linear infinite;
 -webkit-animation-name: mymove;
@@ -570,6 +612,8 @@ z-index: 2;
 }
 
 @media screen and (max-width: 800px) {
+
+.greetingsText { bottom: 65px; left: 1216px; }
 
 @-webkit-keyframes mymove {
   0% {
@@ -593,7 +637,7 @@ z-index: 2;
 
 .filterFlyingSanta {
 position: absolute;
-top: 123px;
+top: 154px;
 z-index: 2;
 -webkit-animation: linear infinite;
 -webkit-animation-name: mymove;
@@ -602,6 +646,8 @@ z-index: 2;
 }
 
 @media screen and (max-width: 768px) {
+
+.greetingsText { bottom: -395px; left: 1216px; }
 
 @-webkit-keyframes mymove {
   0% {
@@ -625,7 +671,7 @@ z-index: 2;
 
 .filterFlyingSanta {
 position: absolute;
-top: 124px;
+top: 154px;
 z-index: 2;
 -webkit-animation: linear infinite;
 -webkit-animation-name: mymove;
@@ -634,6 +680,8 @@ z-index: 2;
 }
 
 @media screen and (max-width: 425px) {
+
+.greetingsText { bottom: -395px; left: 1216px; }  
 
 @-webkit-keyframes mymove {
   0% {
@@ -657,7 +705,7 @@ z-index: 2;
 
 .filterFlyingSanta {
 position: absolute;
-top: 124px;
+top: 154px;
 z-index: 2;
 -webkit-animation: linear infinite;
 -webkit-animation-name: mymove;
@@ -666,6 +714,8 @@ z-index: 2;
 }
 
 @media screen and (max-width: 375px) {
+
+.greetingsText { bottom: -395px; left: 1216px; }
 
 @-webkit-keyframes mymove {
   0% {
@@ -689,7 +739,7 @@ z-index: 2;
 
 .filterFlyingSanta {
 position: absolute;
-top: 123px;
+top: 154px;
 z-index: 2;
 -webkit-animation: linear infinite;
 -webkit-animation-name: mymove;
