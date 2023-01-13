@@ -45,7 +45,7 @@ body {
 .header {
 width: 1280px;
 }
-
+/*чтобы текст пичатался, нужно и в штмл разблокировать*/
 .c1 {
 display: inline-block;
 margin-left: 388px;
@@ -86,13 +86,13 @@ animation-delay: 5s;/*время через сколько начнёт печа
 
 .greetingsText {
  position: absolute;
- width: 48px;
- bottom: -296px;
- left: 1226px;
+ width: 1280px/*48px*/;
+ ottom: -296px;
+ eft: 1226px;
 }
 
 .listGreetingsText {
-isplay: flex;
+display: flex;
 justify-content: space-between;
 align-items: center;
 height: 74p;
@@ -113,7 +113,7 @@ width: 650p;
 height: 64p;
 /*animation-duration: 100s; /*регулируется быстрота и медлительность движения при включенном js*/
 /*animation-name: mymove;*/
-top: 150px;
+top: 129px;
 right: 242p;
 z-index: 2;
 cursor: pointe;
@@ -579,7 +579,7 @@ height: 283px;
 
 @media screen and (max-width: 1024px) {
 
-.greetingsText { bottom: -395px; left: 1216px; }
+greetingsText { bottom: -395px; left: 1216px; }
 
 @-webkit-keyframes mymove {
   0% {
@@ -603,7 +603,7 @@ height: 283px;
 
 .filterFlyingSanta {
 position: absolute;
-top: 154px;
+top: 129px;
 z-index: 2;
 -webkit-animation: linear infinite;
 -webkit-animation-name: mymove;
@@ -613,7 +613,7 @@ z-index: 2;
 
 @media screen and (max-width: 800px) {
 
-.greetingsText { bottom: 65px; left: 1216px; }
+greetingsText { bottom: 65px; left: 1216px; }
 
 @-webkit-keyframes mymove {
   0% {
@@ -637,7 +637,7 @@ z-index: 2;
 
 .filterFlyingSanta {
 position: absolute;
-top: 154px;
+top: 129px;
 z-index: 2;
 -webkit-animation: linear infinite;
 -webkit-animation-name: mymove;
@@ -647,7 +647,7 @@ z-index: 2;
 
 @media screen and (max-width: 768px) {
 
-.greetingsText { bottom: -395px; left: 1216px; }
+greetingsText { bottom: -395px; left: 1216px; }
 
 @-webkit-keyframes mymove {
   0% {
@@ -671,7 +671,7 @@ z-index: 2;
 
 .filterFlyingSanta {
 position: absolute;
-top: 154px;
+top: 129px;
 z-index: 2;
 -webkit-animation: linear infinite;
 -webkit-animation-name: mymove;
@@ -681,7 +681,7 @@ z-index: 2;
 
 @media screen and (max-width: 425px) {
 
-.greetingsText { bottom: -395px; left: 1216px; }  
+greetingsText { bottom: -395px; left: 1216px; }  
 
 @-webkit-keyframes mymove {
   0% {
@@ -705,7 +705,7 @@ z-index: 2;
 
 .filterFlyingSanta {
 position: absolute;
-top: 154px;
+top: 129px;
 z-index: 2;
 -webkit-animation: linear infinite;
 -webkit-animation-name: mymove;
@@ -715,7 +715,7 @@ z-index: 2;
 
 @media screen and (max-width: 375px) {
 
-.greetingsText { bottom: -395px; left: 1216px; }
+greetingsText { bottom: -395px; left: 1216px; }
 
 @-webkit-keyframes mymove {
   0% {
@@ -739,7 +739,7 @@ z-index: 2;
 
 .filterFlyingSanta {
 position: absolute;
-top: 154px;
+top: 129px;
 z-index: 2;
 -webkit-animation: linear infinite;
 -webkit-animation-name: mymove;
