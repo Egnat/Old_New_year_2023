@@ -33,19 +33,20 @@
 }
 
 body {
-	idth:100%;
+  idth:100%;
    eight:100%;
-	box-sizing: border-box;
-	background-image: url('https://usagif.com/wp-content/uploads/gif/snwflks-21.gif');/*https://highstar.ru/pictures/snejinki/09.gif https://usagif.com/wp-content/uploads/gif/snwflks-29.gif*/
-	background-size: cover;
-	background-position: center center;
+  box-sizing: border-box;
+  background-image: url('https://usagif.com/wp-content/uploads/gif/snwflks-21.gif');/*https://highstar.ru/pictures/snejinki/09.gif https://usagif.com/wp-content/uploads/gif/snwflks-29.gif*/
+  background-size: cover;
+  background-position: center center;
    background-color: black;
 }
 
 .header {
 width: 1280px;
 }
-/*чтобы текст пичатался, нужно и в штмл разблокировать*/
+
+/*чтобы текст пичатался, нужно и в штмл разблокировать, но на планшете пока не красиво, возможно из-за того, что всё сделал в хедере, может быть артикль нужно с хедера убрать, оставить тьлько Поздравляю*/
 .c1 {
 display: inline-block;
 width: 676px;
@@ -80,9 +81,15 @@ animation-delay: 5s;/*время через сколько начнёт печа
 
 .greetingsText {
  position: absolute;
+<<<<<<< HEAD
  width: /*1280px*/48px;
  bottom: -296px;
  left: 1226px;
+=======
+ width: 1280px/*48px*/;
+ ottom: -296px;
+ eft: 1226px;/*подключить если добавляю Поздравляю, а артикль с поздравлениями размещаю справа вдоль страницы*/
+>>>>>>> 8331554abdb34281cc13abec27331cf12165b417
 }
 
 .listGreetingsText {
@@ -149,7 +156,7 @@ height: 77px;
 }
 
 .box {
-	position: absolute;
+  position: absolute;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -185,135 +192,135 @@ height: 77px;
 }
 
 @keyframes glitch-before {
-	 0% {
-		 clip: rect(58px, 350px, 17px, 30px);
-	}
-	 5% {
-		 clip: rect(12px, 350px, 58px, 30px);
-	}
-	 10% {
-		 clip: rect(53px, 350px, 125px, 30px);
-	}
-	 15% {
-		 clip: rect(111px, 350px, 72px, 30px);
-	}
-	 20% {
-		 clip: rect(70px, 350px, 116px, 30px);
-	}
-	 25% {
-		 clip: rect(109px, 350px, 144px, 30px);
-	}
-	 30% {
-		 clip: rect(144px, 350px, 7px, 30px);
-	}
-	 35% {
-		 clip: rect(118px, 350px, 71px, 30px);
-	}
-	 40% {
-		 clip: rect(147px, 350px, 120px, 30px);
-	}
-	 45% {
-		 clip: rect(57px, 350px, 145px, 30px);
-	}
-	 50% {
-		 clip: rect(63px, 350px, 14px, 30px);
-	}
-	 55% {
-		 clip: rect(69px, 350px, 108px, 30px);
-	}
-	 60% {
-		 clip: rect(75px, 350px, 64px, 30px);
-	}
-	 65% {
-		 clip: rect(108px, 350px, 25px, 30px);
-	}
-	 70% {
-		 clip: rect(129px, 350px, 139px, 30px);
-	}
-	 75% {
-		 clip: rect(25px, 350px, 113px, 30px);
-	}
-	 80% {
-		 clip: rect(47px, 350px, 125px, 30px);
-	}
-	 85% {
-		 clip: rect(142px, 350px, 35px, 30px);
-	}
-	 90% {
-		 clip: rect(14px, 350px, 117px, 30px);
-	}
-	 95% {
-		 clip: rect(135px, 350px, 104px, 30px);
-	}
-	 100% {
-		 clip: rect(75px, 350px, 63px, 30px);
-	}
+   0% {
+     clip: rect(58px, 350px, 17px, 30px);
+  }
+   5% {
+     clip: rect(12px, 350px, 58px, 30px);
+  }
+   10% {
+     clip: rect(53px, 350px, 125px, 30px);
+  }
+   15% {
+     clip: rect(111px, 350px, 72px, 30px);
+  }
+   20% {
+     clip: rect(70px, 350px, 116px, 30px);
+  }
+   25% {
+     clip: rect(109px, 350px, 144px, 30px);
+  }
+   30% {
+     clip: rect(144px, 350px, 7px, 30px);
+  }
+   35% {
+     clip: rect(118px, 350px, 71px, 30px);
+  }
+   40% {
+     clip: rect(147px, 350px, 120px, 30px);
+  }
+   45% {
+     clip: rect(57px, 350px, 145px, 30px);
+  }
+   50% {
+     clip: rect(63px, 350px, 14px, 30px);
+  }
+   55% {
+     clip: rect(69px, 350px, 108px, 30px);
+  }
+   60% {
+     clip: rect(75px, 350px, 64px, 30px);
+  }
+   65% {
+     clip: rect(108px, 350px, 25px, 30px);
+  }
+   70% {
+     clip: rect(129px, 350px, 139px, 30px);
+  }
+   75% {
+     clip: rect(25px, 350px, 113px, 30px);
+  }
+   80% {
+     clip: rect(47px, 350px, 125px, 30px);
+  }
+   85% {
+     clip: rect(142px, 350px, 35px, 30px);
+  }
+   90% {
+     clip: rect(14px, 350px, 117px, 30px);
+  }
+   95% {
+     clip: rect(135px, 350px, 104px, 30px);
+  }
+   100% {
+     clip: rect(75px, 350px, 63px, 30px);
+  }
 }
 
 @keyframes glitch-after {
-	 0% {
-		 clip: rect(71px, 350px, 102px, 30px);
-	}
-	 5% {
-		 clip: rect(77px, 350px, 6px, 30px);
-	}
-	 10% {
-		 clip: rect(142px, 350px, 119px, 30px);
-	}
-	 15% {
-		 clip: rect(1px, 350px, 20px, 30px);
-	}
-	 20% {
-		 clip: rect(35px, 350px, 56px, 30px);
-	}
-	 25% {
-		 clip: rect(65px, 350px, 116px, 30px);
-	}
-	 30% {
-		 clip: rect(5px, 350px, 89px, 30px);
-	}
-	 35% {
-		 clip: rect(81px, 350px, 41px, 30px);
-	}
-	 40% {
-		 clip: rect(106px, 350px, 134px, 30px);
-	}
-	 45% {
-		 clip: rect(16px, 350px, 28px, 30px);
-	}
-	 50% {
-		 clip: rect(76px, 350px, 125px, 30px);
-	}
-	 55% {
-		 clip: rect(130px, 350px, 141px, 30px);
-	}
-	 60% {
-		 clip: rect(103px, 350px, 75px, 30px);
-	}
-	 65% {
-		 clip: rect(4px, 350px, 32px, 30px);
-	}
-	 70% {
-		 clip: rect(7px, 350px, 123px, 30px);
-	}
-	 75% {
-		 clip: rect(106px, 350px, 42px, 30px);
-	}
-	 80% {
-		 clip: rect(41px, 350px, 94px, 30px);
-	}
-	 85% {
-		 clip: rect(95px, 350px, 5px, 30px);
-	}
-	 90% {
-		 clip: rect(139px, 350px, 144px, 30px);
-	}
-	 95% {
-		 clip: rect(100px, 350px, 99px, 30px);
-	}
-	 100% {
-		 clip: rect(5px, 350px, 126px, 30px);
-	}
+   0% {
+     clip: rect(71px, 350px, 102px, 30px);
+  }
+   5% {
+     clip: rect(77px, 350px, 6px, 30px);
+  }
+   10% {
+     clip: rect(142px, 350px, 119px, 30px);
+  }
+   15% {
+     clip: rect(1px, 350px, 20px, 30px);
+  }
+   20% {
+     clip: rect(35px, 350px, 56px, 30px);
+  }
+   25% {
+     clip: rect(65px, 350px, 116px, 30px);
+  }
+   30% {
+     clip: rect(5px, 350px, 89px, 30px);
+  }
+   35% {
+     clip: rect(81px, 350px, 41px, 30px);
+  }
+   40% {
+     clip: rect(106px, 350px, 134px, 30px);
+  }
+   45% {
+     clip: rect(16px, 350px, 28px, 30px);
+  }
+   50% {
+     clip: rect(76px, 350px, 125px, 30px);
+  }
+   55% {
+     clip: rect(130px, 350px, 141px, 30px);
+  }
+   60% {
+     clip: rect(103px, 350px, 75px, 30px);
+  }
+   65% {
+     clip: rect(4px, 350px, 32px, 30px);
+  }
+   70% {
+     clip: rect(7px, 350px, 123px, 30px);
+  }
+   75% {
+     clip: rect(106px, 350px, 42px, 30px);
+  }
+   80% {
+     clip: rect(41px, 350px, 94px, 30px);
+  }
+   85% {
+     clip: rect(95px, 350px, 5px, 30px);
+  }
+   90% {
+     clip: rect(139px, 350px, 144px, 30px);
+  }
+   95% {
+     clip: rect(100px, 350px, 99px, 30px);
+  }
+   100% {
+     clip: rect(5px, 350px, 126px, 30px);
+  }
 }
 
 .sectionSlider {
