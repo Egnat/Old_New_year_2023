@@ -42,6 +42,10 @@ body {
    background-color: blue;
 }
 
+.header {
+width: 1280px;
+}
+
 .greetingsText {
  position: absolute;
  width: 1280px;
